@@ -33,3 +33,15 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Docker: Build and Run Instructions
+
+1. Build the Docker Image
+```
+docker build -t doc-upload:1.0 .
+```
+2. Run the Docker Container
+```
+docker run -p 8080:8080 doc-upload:1.0
+```
+Access the application at: http://localhost:8080
